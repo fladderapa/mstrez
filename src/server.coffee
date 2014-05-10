@@ -22,7 +22,7 @@ require("bucket-node").initSingletonBucket 'mami.db', (data) ->
   app = express()
 
   app.configure ->
-    app.set "port", process.env.PORT or 3010
+    app.set "port", process.env.PORT or 3000
     app.set "views", __dirname + "/views"
     app.set "view engine", "jade"
     app.use express.logger("dev")
