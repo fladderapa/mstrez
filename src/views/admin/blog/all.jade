@@ -1,0 +1,25 @@
+extends ../layouts/admin-layout
+
+block content
+  
+  .container
+    h2
+     | Latest news
+    p
+      a(href="/admin/blog/new", style="color:white !important;").btn.btn-primary Nytt inlägg 
+        i.fa.fa-plus-square
+
+    table.table.table-striped
+      thead
+        tr.active
+          th Titel
+          th Datum
+          th 
+      for blogPost in blogPosts
+        tr
+          td
+            a(href="/admin/blog/#{blogPost.id}") #{blogPost.title}
+          td=blogPost.date
+          td
+            form(method="POST", action="/admin/blog/delete/#{blogPost.id}")
+              input(type="submit", value="Delete")

@@ -1,0 +1,19 @@
+extends ../layouts/admin-layout
+
+block content
+
+  .container
+    h1
+      | Uploads
+    .span8
+      h3 Upload file
+      form(method="POST", enctype="multipart/form-data", action="")
+        input(type="file", name="image")
+        input(type="submit", value="Ladda upp")
+    .span4
+      h3 uploaded files
+      form(method="post", action="/admin/upload/delete")
+        for file in files
+          img(src="#{file.url}")
+          input(type="checkbox", name="fileIds", value="#{file.id}")
+        input(type="submit", value="Delete")

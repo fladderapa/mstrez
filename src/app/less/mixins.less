@@ -1,0 +1,89 @@
+.link-mixin(@color,@hovercolor) {
+  font-family: @boldFont;
+  background-color: transparent;
+  text-decoration: none;
+  color:@color;
+    -webkit-transition: color 0.1s ease-in; 
+     -moz-transition: color 0.1s ease-in; 
+       -o-transition: color 0.1s ease-in; 
+          transition: color 0.1s ease-in; 
+
+  &:hover {
+    color: @hovercolor;
+    text-decoration: none;
+    background-color: transparent;
+  }
+}
+
+.clearfix() {
+  &:before,
+  &:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+.crkl-variant(@color,@bgcolor) {
+  color: @color;
+  background-color: @bgcolor;
+  border-color: @bgcolor;
+}
+
+.button-outline-variant(@color,@border-color,@border-weight: 2px){
+  color:@color;
+  background: none;
+  border: @border-weight solid @border-color;
+
+  &:hover {
+    color: @color;
+    border-color: darken(@border-color, 10%);
+  }
+
+  &.btn-muted:hover,
+  &.btn-muted:active,
+  &.btn-muted:focus {
+    cursor: default;
+    color:darken(@color,5%);
+  }
+
+}
+
+.button-reg-variant(@bg-color){
+  background: @bg-color;
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    background: darken(@bg-color, 10%)
+  }
+}
+
+.button-size-variant(@btn-size){
+  font-size:@btn-size;
+}
+
+.label-variant (@font-size,@label-color) {
+  font-size: @font-size;
+  color: @label-color;
+  border: 0.1em solid @label-color;
+}
+
+
+
+
+.transition(@property: all, @duration: 0.3s, @easing: ease-out){
+  -webkit-transition: @property @duration @easing; 
+     -moz-transition: @property @duration @easing; 
+       -o-transition: @property @duration @easing; 
+          transition: @property @duration @easing; 
+}
+
+.animation-mixin(@animation){
+  -webkit-animation: @animation;
+     -moz-animation: @animation;
+       -o-animation: @animation;
+          animation: @animation;
+}

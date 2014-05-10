@@ -1,0 +1,254 @@
+@import "/bootstrap/less/bootstrap";
+@import "/font-awesome/less/font-awesome";
+
+@import "utils";
+
+.sans-serif{
+  font-family: 'Open Sans', sans-serif !important;
+}
+
+
+body{
+background-color: #121212 !important;
+color: #f2f2f2 !important;
+}
+
+h1{
+  font-size: 82px !important;
+  font-family: 'Montserrat', sans-serif !important;
+  
+}
+
+h2{
+  font-family: 'Montserrat', sans-serif !important;
+  margin-bottom: 50px !important;
+}
+
+h3{
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+h4{
+  font-family: 'Montserrat', sans-serif !important;
+  
+}
+
+p{
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+  margin-top: 20px !important;
+  margin-bottom: 0px !important;
+  line-height: 1.8 !important;
+}
+
+i{
+  color: rgb(189, 89, 198);
+}
+
+a{
+  color: rgb(189, 89, 198) !important;
+}
+
+#instafeed span {
+  margin-top: 20px;
+}
+
+.album img:hover{
+  opacity:0.6;
+  filter:alpha(opacity=60); 
+}
+
+.instapic img{
+  margin-top: 50px;
+
+}
+.nav.navbar-nav li {
+    padding: 10px;
+}
+.nav.navbar-nav li:hover {
+    cursor: pointer;
+    color: #C4C4C4;
+}
+
+.navbar.navbar-inverse{
+  background-color: black !important;
+}
+
+.navbar{
+  background-color: #121212 !important;
+  border-style: none !important;
+}
+
+.about-section{
+  margin-top: 200px;
+}
+.maintron-index{
+  background: url("/img/MsTrez.jpg") no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+}
+
+.section-news{
+  margin-top: 200px;
+}
+.maintron-index .container{
+  padding-top: 450px;
+}
+
+.layer-index{
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  position: relative;
+  height: 800px;
+}
+
+.parallax01{
+  background: url("/img/MsTrez2.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+}
+
+.spotify-section{
+  background-color: black !important;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin-top: 200px;
+}
+
+.parallax01 .container{
+  padding-top: 300px;
+  padding-bottom: 350px;
+}
+
+.post h3{
+  margin-top: 100px !important;
+}
+
+.center{
+  text-align: center !important;
+}
+
+.social-media{
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.social-media h2{
+  margin-bottom: 50px;
+}
+
+.social-media img{
+  padding: 15px;
+}
+
+.img-responsive{
+  display: inline !important;
+}
+
+.section-follow{
+  margin-top: 200px;
+}
+
+.fb-like{
+  margin-top: 50px;
+}
+
+.bottom {
+  bottom:0;
+  left:0;
+  right:0;
+  color: white;
+  width: 100% !important;
+}
+
+.album{
+  background-color: black !important;
+  padding-top: 100px;
+  margin-top: 200px;
+}
+
+.margin{
+  margin-top: 20px;
+}
+
+.campaign-drag-right {
+  float: right !important;
+  margin-right: -10px;
+  padding: 20px 0;
+  list-style: none;
+  margin-bottom: 0;
+  @media (min-width:@screen-tablet) {
+    float: right !important;
+    margin-right: 100px;
+    padding-top: 50px;
+    list-style: none;
+    margin-bottom: 0;
+  }
+}
+
+.campaign-drag-right  li {
+  float: left;
+  padding: 0 15px;
+}
+
+.campaign-drag-right  p {
+  color: white !important;
+  margin: 0px !important;
+}
+
+@media only screen and (max-width : 767px) {
+  .nav.navbar-nav li {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 15px;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+}
+
+@media only screen and (max-width : 480px) {
+  .margin{
+    margin-top: 100px;
+    margin-bottom: -30px !important;
+  }
+  .section-news{
+    margin-top: 0px;
+  }
+  .spotify-section{
+    margin-top: 100px;
+  }
+  .section-follow{
+    margin-top: 100px;
+  }
+
+  .about-section{
+    margin-top: 100px;
+  }
+
+  .album{
+    margin-top: 100px;
+  }
+
+  .parallax01{
+    display: none;
+  }
+   .album img{
+    margin-top: 40px;
+  }
+
+  .images{
+    display: none;
+  }
+
+}

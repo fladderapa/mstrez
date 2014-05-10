@@ -1,0 +1,22 @@
+{
+  "name": "application-name",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "express": "~3.2.6",
+    "jade": "~0.31.2",
+    "less-middleware": "~0.1.15",
+    "coffee-script": "*",
+    "bucket": "KONDENSATOR/bucket-node",
+    "moment": "",
+    "node-mandrill": "^1.0.1",
+    "node-uuid": "~1.4.1",
+    "underscore.string": "",
+    "underscore": "",
+    "async": "*",
+    "bitly": "~1.2.4",
+    "connect-flash": "0.1.0",
+    "coffee-middleware": "^0.2.1",
+    "rss": "^0.3.2"
+  }
+}

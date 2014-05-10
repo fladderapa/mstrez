@@ -1,0 +1,190 @@
+@font-face {
+  font-family: 'ProximaNova-Regular';
+  src: url('@{fontPath}proxima-nova-regular.eot');
+  src: url('@{fontPath}proxima-nova-regular.eot?#iefix') format('embedded-opentype'),
+       url('@{fontPath}proxima-nova-regular.woff') format('woff'),
+       url('@{fontPath}proxima-nova-regular.ttf') format('truetype'),
+       url('@{fontPath}proxima-nova-regular.svg#ywftsvg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ProximaNova-Semibold';
+  src: url('@{fontPath}proxima-nova-semibold.eot');
+  src: url('@{fontPath}proxima-nova-semibold.eot?#iefix') format('embedded-opentype'),
+       url('@{fontPath}proxima-nova-semibold.woff') format('woff'),
+       url('@{fontPath}proxima-nova-semibold.ttf') format('truetype'),
+       url('@{fontPath}proxima-nova-semibold.svg#ywftsvg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'AdelleSemiBold';
+    src: url('@{fontPath}adelle_semibold-webfont.eot');
+    src: url('@{fontPath}adelle_semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('@{fontPath}adelle_semibold-webfont.woff') format('woff'),
+         url('@{fontPath}adelle_semibold-webfont.ttf') format('truetype'),
+         url('@{fontPath}adelle_semibold-webfont.svg#AdelleRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'AdelleLight';
+    src: url('@{fontPath}adelle_light-webfont.eot');
+    src: url('@{fontPath}adelle_light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('@{fontPath}adelle_light-webfont.woff') format('woff'),
+         url('@{fontPath}adelle_light-webfont.ttf') format('truetype'),
+         url('@{fontPath}adelle_light-webfont.svg#AdelleLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'AdelleLightItalic';
+    src: url('@{fontPath}adelle_lightitalic-webfont.eot');
+    src: url('@{fontPath}adelle_lightitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('@{fontPath}adelle_lightitalic-webfont.woff') format('woff'),
+         url('@{fontPath}adelle_lightitalic-webfont.ttf') format('truetype'),
+         url('@{fontPath}adelle_lightitalic-webfont.svg#AdelleLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@adelle: "AdelleLight", "Helvetica Neue";
+@adelleBold: "AdelleSemiBold", "Helvetica Neue";
+@regFont: "ProximaNova-Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+@boldFont: "ProximaNova-Semibold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+@adelleItalic: "AdelleLightItalic";
+
+body {
+  font-family: @regFont;
+  font-size: 16px;
+  color: @grey-offer;
+}
+
+a {
+  .link-mixin(#000,lighten(#000, 50%));
+}
+
+span.bold {
+  font-family: @adelleBold;
+}
+
+span.bold-prox {
+  font-family: @boldFont;
+}
+
+h1 {
+  font-family: @adelle;
+  color:@heading;
+  font-size: 28px;
+  line-height: 36px;
+}
+
+h2 {
+  font-family: @boldFont;
+  font-size: 26px;
+  font-weight: normal;
+  line-height: 1.2;
+  color:@heading;
+
+  &.no-btm-marg {
+    margin-bottom:0;
+  }
+  &.no-top-marg {
+    margin-top:0;
+  }
+}
+
+h3 {
+  font-family: @regFont;
+  font-size: 18px;
+  &.lead {
+    font-size: 18px;
+    font-weight: normal;
+  }
+}
+
+h4 {
+  font-family: @adelle;
+  font-size: 16px;
+  line-height: 1.3;
+  margin-top:10px;
+  margin-bottom:20px;
+}
+
+h5 {
+  font-family: @adelle;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+h6 {
+  font-family: @boldFont;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.2;
+  color:@heading;
+}
+
+strong {
+  font-weight: normal;
+  font-family: 'ProximaNova-Semibold';
+}
+
+.italic{
+  font-family: @adelleItalic;
+  color: @red;
+  font-size: 22px;
+}
+
+.text-container-lg {
+  max-width: 940px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.text-container-sm {
+  max-width: 760px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.text-container-mi {
+  max-width: 610px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-container-xmi {
+  max-width: 540px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-container-xxmi {
+  max-width: 490px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tech {
+  font-family: @adelle;
+  font-size: 14px;
+  margin-bottom:20px;
+  .divider {
+    color: @grey-menu;
+  }
+}
+
+
+
+
+

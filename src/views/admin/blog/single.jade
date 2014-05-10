@@ -1,0 +1,47 @@
+extends ../layouts/admin-layout
+
+block content
+  .container
+    .edit
+      h2 Editera sida: #{blogPost.title}
+      form(id="uploadForm", enctype="multipart/form-data", action="uploadfile", method="post")
+        .form-group.row
+          .col-md-4
+            label(for='image') Image
+            input#files(type="file", multiple="true", accept="image/*")
+            input#url(type="url")
+            if(blogImage)
+              #dropZone(style='display:none;') Klicka här för att välja bild
+              #deleteImage Click here to delete image
+              #thumbnails
+                img(src=blogImage.url, style="width: 480px; height: 320px;", width="480", height="320")
+            else
+              #dropZone Klicka här för att välja bild.
+              #deleteImage(style="display:none;") Click here to delete image
+              #thumbnails
+      form(action="", method="POST", enctype="multipart/form-data")
+        .form-group.row
+          .col-md-6
+            p
+              label(for='title') Titel
+              input.form-control(type="text", name="title", id="title", value=blogPost.title)
+            
+        .form-group
+          label(for='txt-editor') Innehåll
+
+          #txt-editor-toolbar(style='display: none;')
+
+            include ../editor-templates/editor-toolbar
+
+          p
+            textarea.form-control#txt-editor(name="text", rows="7")!=blogPost.text
+
+        
+                
+        input(type='hidden', id='imageid', name='imageid', value=blogPost.image)
+        input.btn.btn-large.btn-info(type="submit", id="saveBlog", value="Spara")
+
+
+append scripts
+  script(src="/lib/jquery-image-uploader/src/jquery.uploader.js")
+  script(src="/js/blog.js")

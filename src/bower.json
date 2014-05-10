@@ -1,0 +1,27 @@
+{
+  "name": "logr.co",
+  "version": "0.0.0",
+  "homepage": "http://www.logr.co",
+  "authors": [
+    "josephbadran <joseph@kondensator.se>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/lib/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.0",
+    "bootstrap": "*",
+    "font-awesome": "4.0.3",
+    "jquery.stellar": "~0.6.2",
+    "modernizr": "~2.7.2",
+    "jquery-image-uploader": "0.1.4",
+    "wysihtml5": "~0.3.0"
+  }
+}

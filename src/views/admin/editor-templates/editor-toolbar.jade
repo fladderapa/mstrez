@@ -1,0 +1,29 @@
+.btn-group
+  a(data-wysihtml5-command='formatBlock', data-wysihtml5-command-value='h1').btn.btn-default
+    strong H1
+  a(data-wysihtml5-command='formatBlock', data-wysihtml5-command-value='h2').btn.btn-default
+    strong H2
+  a(data-wysihtml5-command='formatBlock', data-wysihtml5-command-value='h3').btn.btn-default
+    strong H3
+  a(data-wysihtml5-command='formatBlock', data-wysihtml5-command-value='h4').btn.btn-default
+    strong H4
+  a(data-wysihtml5-command='formatBlock', data-wysihtml5-command-value='p').btn.btn-default
+    strong P
+.btn-group
+  a(data-wysihtml5-command='bold').btn.btn-default
+    i.fa.fa-bold
+  a(data-wysihtml5-command='italic').btn.btn-default
+    i.fa.fa-italic
+.btn-group
+  a(data-wysihtml5-command="insertOrderedList").btn.btn-default
+    i.fa.fa-list-ol
+  a(data-wysihtml5-command='insertUnorderedList').btn.btn-default
+    i.fa.fa-list-ul
+.btn-group
+  a(data-wysihtml5-command='createLink').btn.btn-default
+    i.fa.fa-chain
+  div(data-wysihtml5-dialog='createLink', style='display: none;').btn.btn-default.btn-holder
+    input.text(data-wysihtml5-dialog-field='href', value='http://').form-control
+.btn-group
+  a(data-wysihtml5-action="change_view").btn.btn-default
+    strong HTML
