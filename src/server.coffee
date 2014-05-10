@@ -61,8 +61,7 @@ require("bucket-node").initSingletonBucket 'mami.db', (data) ->
 
   app.get "/", routes.index
 
-  app.get "/blogg", routes.blog
-  app.get "/blogg/:id", routes.singleBlogPost
+  
 
 
   app.get "/admin", login.authenticateAdmin, blog.all
